@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "commercial-tenant-index": "/components/commercial-tenant-index/commercial-tenant-index",
+    "commercial-tenant-type": "/components/commercial-tenant-type/commercial-tenant-type",
+    "commercial-tenant-cart": "/components/commercial-tenant-cart/commercial-tenant-cart",
+    "commercial-tenant-me": "/components/commercial-tenant-me/commercial-tenant-me"
+  }
+}

@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*每个页面公共css */
+/* 取消搜索框默认样式，去掉边框 */
+.uni-searchbar__box{
+	border-style: none !important;
+}
+

@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-icons": "/components/uni-icons/uni-icons",
+    "uni-recommend-list": "/components/components/uni-recommend-list/uni-recommend-list",
+    "uin-product-list": "/components/components/uin-product-list/uin-product-list"
+  }
+}
