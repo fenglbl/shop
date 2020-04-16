@@ -1,6 +1,6 @@
 <template>
 	<view class="commodity">
-		<view class="commodity-item">
+		<view class="commodity-item" @click="toDetail">
 			<image class="image" src="../../../static/image/shop.png" mode="scaleToFill" :style="{height:imageHeight+'px'}"></image>
 			<!-- 标题 -->
 			<view class="title">
@@ -26,6 +26,12 @@
 <script>
 	export default {
 		name:"commodity",//商品
+		props:{
+			opction:{
+				type:Object,
+				default:()=>{return{}}
+			}
+		},
 		data() {
 			return {
 				imageHeight:0
@@ -36,6 +42,14 @@
 			query.select('.image').boundingClientRect().exec(doc=>{
 				this.imageHeight = doc[0].width-8
 			})
+		},
+		methods:{
+			// 跳转到商品详情页
+			toDetail(){
+				uni.navigateTo({
+					url:"../../pages/detail/detail?pid="+this.opction.pid
+				})
+			}
 		}
 	}
 </script>

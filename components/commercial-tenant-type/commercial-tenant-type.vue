@@ -14,7 +14,7 @@
 			<!-- 右边商品列表 -->
 			<view class="parduct-list-box">
 				<view class="commodity-list">
-					<commodity-item class="item" v-for="(item,index) of commodity" :key="index"/>
+					<commodity-item class="item" v-for="(item,index) of commodity" :key="index" :opction="{pid:index,image:'../static/image/shop.png',title:'王圣堂骆驼奶粉  三罐   迪奥  999 哑光',price:'159.00'}"/>
 
 				</view>
 			</view>

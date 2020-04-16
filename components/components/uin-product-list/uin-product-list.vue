@@ -1,12 +1,12 @@
 <template>
 	<view class="uin-product-list">
-		<view class="product-item">
-			<image class="image" src="../../../static/image/shop.png" mode="scaleToFill"></image>
+		<view class="product-item" @click="toDetail">
+			<image class="image" :src="opction.image" mode="scaleToFill" :style="{height:imageHeight+'px'}"></image>
 			<view class="title">
-				王圣堂骆驼奶粉  三罐   迪奥  999 哑光
+				{{opction.title}}
 			</view>
 			<view class="price">
-				￥159.00
+				￥{{opction.price}}
 			</view>
 		</view>
 	</view>
@@ -14,10 +14,30 @@
 
 <script>
 	export default {
+		name:"product-list",//商品内容
+		props:{
+			opction:{
+				type:Object,
+				default:{}
+			}
+		},
 		data() {
 			return {
-				
+				imageHeight:0,//图片高度
 			};
+		},
+		mounted() {
+			let query = uni.createSelectorQuery().in(this)
+			query.select('.image').boundingClientRect().exec(doc=>{
+				this.imageHeight = doc[0].width-8
+			})
+		},
+		methods:{
+			toDetail(){
+				uni.navigateTo({
+					url:"../../pages/detail/detail?pid="+this.opction.pid
+				})
+			}
 		}
 	}
 </script>
@@ -33,7 +53,7 @@
 		background-color: $uni-bg-color;
 		.image{
 			width: 100%;
-			height: 48vw;
+			
 		}
 		.title{
 			overflow: hidden;

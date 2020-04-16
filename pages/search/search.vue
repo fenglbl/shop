@@ -23,13 +23,13 @@
 			</view>
 		</view>
 		<!-- 智慧推荐 -->
-		<uni-recommend-list class="recommendation" title="查询商品列表" subTitle="Competitive Products For You" leftIcon="../../../static/image/icon/type-active.png" @click="recommendationClick">
-			<uin-product-list class="product" :opction="item" v-for="(item,index) of searchList" :key="index"></uin-product-list>
+		<uni-recommend-list class="recommendation" title="查询商品列表" subTitle="Competitive Products For You" leftIcon="../../static/image/icon/type-active.png" @click="recommendationClick">
+			<uin-product-list class="product" :opction="item" v-for="(item,index) of searchList" :key="index" ></uin-product-list>
 		</uni-recommend-list>
 		
 		<!-- 智慧推荐 -->
 		<uni-recommend-list class="recommendation" title="智慧推荐" subTitle="Competitive Products For You" leftIcon="../../../static/image/icon/type-active.png" @click="recommendationClick">
-			<uin-product-list class="product" :opction="{image:'../../static/image/shop.png',title:'王圣堂骆驼奶粉  三罐   迪奥  999 哑光',price:'159.00'}" v-for="index of 12" :key="index"></uin-product-list>
+			<uin-product-list class="product" :opction="{pid:1,image:'../../../static/image/shop.png',title:'王圣堂骆驼奶粉  三罐   迪奥  999 哑光',price:'159.00'}" v-for="index of 12" :key="index"></uin-product-list>
 		</uni-recommend-list>
 	</view>
 </template>
@@ -75,12 +75,13 @@
 				})
 				setTimeout(()=>{
 					uni.hideLoading()
+					
 					this.searchList = [
-						{image:'../../static/image/shop.png',title:'王圣堂骆驼奶粉  一罐   迪奥  999 哑光',price:'159.00'},
-						{image:'../../static/image/shop.png',title:'王圣堂骆驼奶粉  二罐   迪奥  999 哑光',price:'159.00'},
-						{image:'../../static/image/shop.png',title:'王圣堂骆驼奶粉  三罐   迪奥  999 哑光',price:'159.00'},
-						{image:'../../static/image/shop.png',title:'王圣堂骆驼奶粉  四罐   迪奥  999 哑光',price:'159.00'},
-						{image:'../../static/image/shop.png',title:'王圣堂骆驼奶粉  五罐   迪奥  999 哑光',price:'159.00'}
+						{pid:1,image:'../../../static/image/shop.png',title:'王圣堂骆驼奶粉  一罐   迪奥  999 哑光',price:'159.00'},
+						{pid:2,image:'../../../static/image/shop.png',title:'王圣堂骆驼奶粉  二罐   迪奥  999 哑光',price:'159.00'},
+						{pid:3,image:'../../../static/image/shop.png',title:'王圣堂骆驼奶粉  三罐   迪奥  999 哑光',price:'159.00'},
+						{pid:4,image:'../../../static/image/shop.png',title:'王圣堂骆驼奶粉  四罐   迪奥  999 哑光',price:'159.00'},
+						{pid:5,image:'../../../static/image/shop.png',title:'王圣堂骆驼奶粉  五罐   迪奥  999 哑光',price:'159.00'}
 					]
 				},1500)
 			}

@@ -8738,7 +8738,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/search/search": { "navigationBarTitleText": "商品查找", "usingComponents": { "uni-recommend-list": "/components/components/uni-recommend-list/uni-recommend-list", "uin-product-list": "/components/components/uin-product-list/uin-product-list" }, "usingAutoImportComponents": { "uni-search-bar": "/components/uni-search-bar/uni-search-bar" } }, "pages/index/index": { "usingComponents": { "commercial-tenant-index": "/components/commercial-tenant-index/commercial-tenant-index", "commercial-tenant-type": "/components/commercial-tenant-type/commercial-tenant-type", "commercial-tenant-cart": "/components/commercial-tenant-cart/commercial-tenant-cart", "commercial-tenant-me": "/components/commercial-tenant-me/commercial-tenant-me" }, "usingAutoImportComponents": { "commercial-tenant-index": "/components/commercial-tenant-index/commercial-tenant-index", "commercial-tenant-type": "/components/commercial-tenant-type/commercial-tenant-type", "commercial-tenant-cart": "/components/commercial-tenant-cart/commercial-tenant-cart", "commercial-tenant-me": "/components/commercial-tenant-me/commercial-tenant-me" } } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "shop", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/detail/detail": { "navigationBarTitleText": "商品详情", "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/index/index": { "usingComponents": { "commercial-tenant-index": "/components/commercial-tenant-index/commercial-tenant-index", "commercial-tenant-type": "/components/commercial-tenant-type/commercial-tenant-type", "commercial-tenant-cart": "/components/commercial-tenant-cart/commercial-tenant-cart", "commercial-tenant-me": "/components/commercial-tenant-me/commercial-tenant-me" }, "usingAutoImportComponents": { "commercial-tenant-index": "/components/commercial-tenant-index/commercial-tenant-index", "commercial-tenant-type": "/components/commercial-tenant-type/commercial-tenant-type", "commercial-tenant-cart": "/components/commercial-tenant-cart/commercial-tenant-cart", "commercial-tenant-me": "/components/commercial-tenant-me/commercial-tenant-me" } }, "pages/search/search": { "navigationBarTitleText": "商品查找", "usingComponents": { "uni-recommend-list": "/components/components/uni-recommend-list/uni-recommend-list", "uin-product-list": "/components/components/uin-product-list/uin-product-list" }, "usingAutoImportComponents": { "uni-search-bar": "/components/uni-search-bar/uni-search-bar" } } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "shop", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 
@@ -8754,7 +8754,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 87:
+/***/ 95:
 /*!******************************************************!*\
   !*** D:/web/shop/shop/components/uni-icons/icons.js ***!
   \******************************************************/

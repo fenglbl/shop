@@ -29,7 +29,7 @@
 		<!-- 分类导航 -->
 		<view class="type-bar">
 			<view class="type-bar-item"  v-for="index of 10" @click="toTypePage" :key="index">
-				<image class="image" src="../../static/image/icon/cart-active.png" mode=""></image>
+				<image class="image" src="../../static/image/shuma.png" mode=""></image>
 				<view>智能马桶</view>
 			</view>
 		</view>
@@ -37,7 +37,7 @@
 		
 		<!-- 精品推荐 - -recommendation -->
 		<uni-recommend-list class="recommendation" title="精品推荐" subTitle="Competitive Products For You" @click="recommendationClick">
-			<uin-product-list class="product" :opction="{image:'../../static/image/shop.png',title:'王圣堂骆驼奶粉  三罐   迪奥  999 哑光',price:'159.00'}" v-for="index of 12" :key="index"></uin-product-list>
+			<uin-product-list class="product" :opction="{pid:index,image:'../../../static/image/shop.png',title:'王圣堂骆驼奶粉  三罐   迪奥  999 哑光',price:'159.00'}" v-for="index of 12" :key="index"></uin-product-list>
 		</uni-recommend-list>
 	</view>
 </template>
@@ -134,6 +134,7 @@
 		}
 		// 分类菜单
 		.type-bar{
+			margin: upx(30) 0;
 			width: 100%;
 			display: flex;
 			flex-wrap: wrap;
